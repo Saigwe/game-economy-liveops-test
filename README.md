@@ -18,6 +18,15 @@
 | **Why it matters** | Live-ops decisions get made on one headline metric. This shows the full picture: the gain, what it costs, and whether the data can be trusted at all. |
 | **Proof** | Every planted effect falls inside its interval. CUPED removes 78% of the variance in sessions. The A/A false-positive rate is about 5%. A logging bug that drops 6% of treatment players is caught (SRM p = 6e-8) before it can overstate retention. 12 pytest tests. See the [readout](results/readout.md). |
 
+## Charts
+Rendered from this repo's own results by `charts/make_charts.py` (`make charts`); CI re-renders them on every push.
+
+These results also feed the **Economy & live-ops** page of the live studio dashboards: [saigwe.github.io/mobile-game-player-analytics](https://saigwe.github.io/mobile-game-player-analytics/).
+
+![Treatment effects with 95% intervals for retention, payer share, sessions and IAP revenue](docs/charts/readout_intervals.png)
+
+![Median coin balance by week for control and treatment](docs/charts/coin_balance.png)
+
 ## The readout in brief
 | Metric | Change | 95% interval |
 |---|---|---|
